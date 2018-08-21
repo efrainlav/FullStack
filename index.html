@@ -18,18 +18,42 @@
         height: 12px;
     }
     
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .container .head
+    {
+        justify-content: space-around;
+        background-color: DodgerBlue;
+
+    }
+    
     </style>
 </head>
 <body>
     <nav>
 
-    <a href="">Inicio</a>
-    <a href="">Blog</a>
-    <a href="">Acerca</a>
-    <img src="/imagenes/carrito.svg" class="svg-carrito" alt="">
-    <img src="/imagenes/more.svg" class="svg-more" alt="">
+        <div class="container">
+            <div class="head">
+                <a href="">Inicio</a>
+                <a href="">Blog</a>
+                <a href="">Acerca</a>
+                <img src="/imagenes/carrito.svg" class="svg-carrito" alt="">
+                <img src="/imagenes/more.svg" class="svg-more" alt="">
 
+            </div>
+
+        </div>
     </nav>
-    <p>Nuevo Parrafo</p>
+
+    <div class="container">
+        <p>Nuevo Parrafo</p>
+        <p>otro Parrafo</p>
+        <p>parrafo desde corregir estilo</p>
+    </div>
 </body>
 </html>
