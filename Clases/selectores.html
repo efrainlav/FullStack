@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+    /* p {
+        color:red;
+    } */
+    
+    /* 
+    
+    div + p
+    El siguiente elemento despues de un DIV hermano
+    
+    div p
+    Todos los parrafos que tengan un padre que sea un DIV
+    
+    div , p
+    Todos los DIV y los Parrafos
+
+    */
+
+    div + p{
+
+        color:turquoise;
+    }
+
+    div, p, h1{
+
+        color:green;
+    }
+
+       div p{
+
+    color:violet;
+    }
+    
+    h1[data-valor="uno"]
+    {
+        color:yellow;
+    }
+
+    h1[data-valor="dos"]
+    {
+        color:saddlebrown;
+    }
+
+    h1
+    {
+        color:red;
+    }
+
+/* pseudo selector que sube la escala del texto 1.3 ptos al pasar sobre el */
+        h1:hover
+    {
+        transform:scale(1.3);
+    }
+
+            p:active
+    {
+        color:royalblue;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Encabezado sin atributo</h1>
+    <h1 data-valor="uno">Encabezado</h1>
+    <h1 data-valor="dos">Encabezado</h1>
+    <p>Texto 1</p>
+    <p class="parrafo">Texto 1</p>
+    <p id="post">Texto 1</p>
+
+    <!-- div>p*3{Text$} -->
+    <div>
+        <p>Texto 1</p>
+        <div>
+            <p>
+                Otro Parrafo
+            </p>
+        </div>
+        <p>Texto 2</p>
+        <p>Texto 3</p>
+    </div>
+    <p>Texto 5</p>
+</body>
+</html>

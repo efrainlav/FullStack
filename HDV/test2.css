@@ -1,0 +1,38 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 1 100%;
+    margin: 0 10px 10px 0;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 3px #888;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    line-height: 120%;
+}
+
+.card-header {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+@media all and (min-width: 50em) {
+    .card {flex: 0 1 30%;}
+    .card-content p {font-size: .9em;}
+    .card-content a {font-size: .9em;}
+}
