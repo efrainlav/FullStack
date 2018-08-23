@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjetas</title>
+    <style>
+
+    .tarjeta{
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+        margin: 5px;
+        box-shadow: 1px 1px 5px #cecece;
+    }
+    .contenedor
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+    }
+    .boton{
+        background-color: #cecece;
+        padding: 20px;
+        color: white;
+        user-select: none;
+        cursor: pointer;
+        font-style: normal;
+        text-transform: uppercase;
+        border-radius: 10px;
+        transition: transform .3s;
+    }
+
+    .boton:hover{
+        transform: scale(1.1);
+        transition: transform .3s;
+    }
+
+    </style>
+</head>
+<body>
+    <div  class="contenedor">
+        <a class="boton">Agregar Tarjeta</a>
+        <input type="text" placeholder="NOTA..." id="texto">
+    </div>
+    
+    <div class="contenedor" id="contenedor">
+            <div id="tarjeta" class="tarjeta"></div>
+    </div>
+   
+    <script>
+        window.onload = function(){
+            console.log('cargo pagina');
+            var tarjeta = document.getElementById("tarjeta");
+            var btnAgregarTarjeta = document.getElementsByClassName('boton');
+            var contenedor = document.getElementById('contenedor');
+            var texto = document.getElementById('texto');
+            
+            
+            btnAgregarTarjeta[0].addEventListener('click', function(){
+                console.log('Agregar tarjeta');
+                var miTarjeta = document.createElement('div');
+                miTarjeta.innerHTML = texto.value;
+                miTarjeta.classList.add('tarjeta');
+                contenedor.appendChild(miTarjeta);
+
+            })
+        }
+    </script>
+</body>
+</html>

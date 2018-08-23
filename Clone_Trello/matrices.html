@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matrices</title>
+</head>
+<body>
+    <script>
+        if(true){
+            var variable= 'un valor';
+            // let variable= 'un valor';
+
+        }
+
+        console.log(variable);
+
+        var matriz = ['lunes', 'martes', 'miercoles'];
+
+        console.log("Es una matriz ?", Array.isArray(matriz));
+        console.log("La matriz antes del push es:", matriz);
+
+        matriz.push('Jueves');
+        console.log("La matriz despues del push es:", matriz);
+
+        matriz.unshift('Domingo');
+        console.log("La matriz despues del unshift es:", matriz);
+        
+        matriz.pop();
+        console.log("La matriz despues del pop es:", matriz);
+
+        console.log("El primer archivo de la matriz es:", matriz[0]);
+
+        console.log("El ultimo archivo de la matriz es:", matriz[3]);
+
+        matriz.splice(1,1, 'una prueba');
+
+        console.log("El Splice corta la matriz:",matriz);
+
+        matriz.forEach(function(valor, index){
+            console.log('elemento', valor, index);
+        });
+
+        matriz.forEach( (valor, index) => { console.log('elemento', valor, index)
+        }
+        );
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

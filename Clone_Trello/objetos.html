@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objetis</title>
+</head>
+<body>
+    
+    <script>
+        var celular = {
+            modelo:'Note 3',
+            marca: 'Samsung',
+            version: 3.4,
+            aplicaciones: ['whatsapp', 'skype'],
+
+            encender : function(){
+                console.log('Celular Encendido');
+                return "Celular Encendido";
+            },
+            apagar : function(){
+                console.log('Celular Apagado');
+                return "Celular Apagado";
+            }
+        }
+    
+    console.log(celular.marca);
+    console.log(celular['modelo']);
+    console.log(celular.encender);
+    console.log(celular.encender());
+    console.log(celular.apagar);
+    console.log(celular.apagar());
+
+
+    </script>
+</body>
+</html>
