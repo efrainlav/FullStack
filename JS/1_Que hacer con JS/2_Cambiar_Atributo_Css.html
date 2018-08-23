@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2_Change_HTML_Css</title>
+</head>
+
+<body>
+    <h2>Que puedo hacer con JavaScript?</h2>
+
+    <p>Javascript puede cambiar los valores de un atributo HTML</p>
+    <p>En este caso Javascript cambia los valores de la fuente src (source) en el atributo de la imagen</p>
+
+    <button onclick="document.getElementById('Bombillo').src='/imagenes/pic_bulbon.gif'">Encender el Bombillo </button>
+
+    <!-- JS es sensible a las comillas dobles y sencillas??? -->
+
+    <img id ='Bombillo' src='/imagenes/pic_bulboff.gif' style='width:100px'>
+    
+    <button onclick="document.getElementById('Bombillo').src='/imagenes/pic_bulboff.gif'">Apagar el Bombillo </button>
+
+
+
+</body>
+
+</html>
